@@ -3,7 +3,7 @@
 <div class="container ns__body ns__questionnaire">
     <h1>Анкета для определения колорита</h1>
     <div class="row fpad30">
-        <div class="col-lg-6 fpad30">
+        <div class="col-lg-6  fpad30">
             <div class="ns__questionnaire__desc">
                 <div class="ns__questionnaire__desc__ico ns__questionnaire__desc__ico--ok">
                     <svg
@@ -24,6 +24,17 @@
                     на
                     расстоянии 20 см. на уровне глаз. Волосы распущены. Так же, необходимо протереть камеру телефона
                     микрофиброй перед тем, как сделать фото.</p>
+            </div>
+            <div class="ns__questionnaire__photo-mob">
+                <div class="ns__questionnaire__photos">
+                    <picture>
+                        <source srcset="images/dist/photo1.jpg 1x, images/dist/photo1@2.jpg 2x">
+                        <img class="d-block" src="images/dist/photo1.jpg" alt="" width="270" height="320">
+                    </picture>
+                    <div class="ns__questionnaire__photos__label ns__questionnaire__photos__label--ok">
+                        Правильно
+                    </div>
+                </div>
             </div>
         </div>
         <div class="col-lg-6 fpad30">
@@ -47,7 +58,7 @@
         </div>
     </div>
     <div class="row fpad30">
-        <div class="col-lg-3 col-6 fpad30">
+        <div class="col-lg-3 col-md-6 col-12 fpad30 hidden-mob">
             <div class="ns__questionnaire__photos">
                 <picture>
                     <source srcset="images/dist/photo1.jpg 1x, images/dist/photo1@2.jpg 2x">
@@ -58,7 +69,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-lg-3 col-6 fpad30">
+        <div class="col-lg-3 col-md-6 col-12 fpad30">
             <div class="ns__questionnaire__photos">
                 <picture>
                     <source srcset="images/dist/photo2.jpg 1x, images/dist/photo2@2.jpg 2x">
@@ -69,7 +80,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-lg-3 col-6 fpad30">
+        <div class="col-lg-3 col-md-6 col-12 fpad30">
             <div class="ns__questionnaire__photos">
                 <picture>
                     <source srcset="images/dist/photo2.jpg 1x, images/dist/photo2@2.jpg 2x">
@@ -80,7 +91,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-lg-3 col-6 fpad30">
+        <div class="col-lg-3 col-md-6 col-12 fpad30">
             <div class="ns__questionnaire__photos">
                 <picture>
                     <source srcset="images/dist/photo2.jpg 1x, images/dist/photo2@2.jpg 2x">
@@ -186,6 +197,88 @@
                             <label for="color" class="ns__questionnaire__form__item__caption">Натуральный цвет Ваших волос*</label>
                             <input type="text" autocomplete="off" placeholder="Натуральный цвет Ваших волос" name="color" id="color" required class="ns__questionnaire__form__input" />
                         </div>
+                        <div class="ns__questionnaire__form__item">
+                            <label for="color2" class="ns__questionnaire__form__item__caption">Эксперименты с цветом волос. Опишите, комфортно ли вам с данным цветом волос.
+                                <br>Давно ли вы в нем? *</label>
+                            <textarea class="ns__questionnaire__form__text" autocomplete="off" placeholder="Эксперименты с цветом волос" name="color2" id="color2" required></textarea>
+                        </div>
+                        <div class="ns__questionnaire__form__item">
+                            <label for="color3" class="ns__questionnaire__form__item__caption">Хотите ли Вы изменить цвет волос?*</label>
+                            <textarea class="ns__questionnaire__form__text" autocomplete="off" placeholder="Хотите ли Вы изменить цвет волос?" name="color3" id="color3" required></textarea>
+                        </div>
+                        <div class="ns__questionnaire__form__item">
+                            <label for="eyes" class="ns__questionnaire__form__item__caption">Цвет Ваших глаз*</label>
+                            <input type="text" autocomplete="off" placeholder="Цвет Ваших глаз" name="eyes" id="eyes" required class="ns__questionnaire__form__input" />
+                        </div>
+                        <div class="ns__questionnaire__form__item">
+                            <label for="zagar" class="ns__questionnaire__form__item__caption">Как ложится на лицо загар? Кожа на лице сначала краснеет? Или сразу смуглеет?*</label>
+                            <input type="text" autocomplete="off" placeholder="как ложится на лицо загар" name="zagar" id="zagar" required class="ns__questionnaire__form__input" />
+                        </div>
+                        <div class="ns__questionnaire__form__item">
+                            <label for="colorit" class="ns__questionnaire__form__item__caption">Определяли ли вы ранее колорит по нашей системе? Если да, то напишите какой он был, кто
+                                определял и поменялось ли что-то в вашей внешности с того времени?</label>
+                            <textarea class="ns__questionnaire__form__text" autocomplete="off" placeholder="Определяли ли вы ранее колорит по нашей системе" name="colorit" id="colorit" required></textarea>
+                        </div>
+                        <div class="ns__questionnaire__form__item">
+                            <label for="soc" class="ns__questionnaire__form__item__caption">Укажите ссылку на Ваш аккаунт в соц сетях*</label>
+                            <input type="text" autocomplete="off" placeholder="Укажите ссылку на Ваш аккаунт в соц сетях*" name="soc" id="soc" required class="ns__questionnaire__form__input" />
+                            <div class="ns__questionnaire__form__item__footer">Желательно аккаунт в Instagram. Проверьте, чтобы профиль был открыт</div>
+                        </div>
+                        <div class="ns__questionnaire__form__item">
+                            <label for="adr" class="ns__questionnaire__form__item__caption">Ваш полный почтовый адрес с индексом и ФИО получателя*</label>
+                            <textarea class="ns__questionnaire__form__text" autocomplete="off" placeholder="Ваш полный почтовый адрес с индексом" name="adr" id="adr" required></textarea>
+                        </div>
+                    </div>
+                    <div class="ns__questionnaire__form__group">
+                        <div class="ns__questionnaire__form__group__header">
+                            <div class="ns__questionnaire__form__group__header__ico">
+                                <svg width="24" height="24">
+                                    <use xlink:href="#svg-delivery"></use>
+                                </svg>
+                            </div>
+                            <span>Выберите способ доставки</span>
+                        </div>
+                        <ul class="nav flex-column ns__questionnaire__form__list-radio">
+                            <li>
+                                <label class="ns__questionnaire__form__radio">
+                                    <input type="radio" checked name="delivery" value="Доставка по РФ - Почтой России">
+                                    <div class="ns__questionnaire__form__radio__value">
+                                        <b>Доставка по РФ - Почтой России</b>
+                                        (6-7 ней. Оплата за доставку включена в стоимость карты-палитры)
+                                    </div>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="ns__questionnaire__form__radio">
+                                    <input type="radio" name="delivery" value="Доставка по РФ - СДЭК">
+                                    <div class="ns__questionnaire__form__radio__value">
+                                        <b>Доставка по РФ - СДЭК</b>
+                                        (3-4 дня. Оплата за доставку при получении от 410р. Стоимость доставки зависит от региона)
+                                    </div>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="ns__questionnaire__form__radio">
+                                    <input type="radio" name="delivery" value="Доставка за пределы РФ - почтой России Авиапересылкой">
+                                    <div class="ns__questionnaire__form__radio__value">
+                                        <b>Доставка за пределы РФ - почтой России Авиапересылкой</b>
+                                        (от 12 дней. Оплата за доставку перед отправкой 250р. Скорость доставки зависит от региона)
+                                    </div>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="ns__questionnaire__form__radio">
+                                    <input type="radio" name="delivery" value="Доставка за пределы РФ - Экпресс-доставкой EMS">
+                                    <div class="ns__questionnaire__form__radio__value">
+                                        <b>Доставка за пределы РФ - Экпресс-доставкой EMS</b>
+                                        (7-10 дней. Оплата за доставку перед отправкой 1600р.)
+                                    </div>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="ns__questionnaire__form__submit">
+                        <button type="submit" class="btn btn--red btn--h-64">Отправить анкету</button>
                     </div>
                 </div>
             </form>
