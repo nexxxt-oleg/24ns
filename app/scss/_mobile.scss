@@ -6,6 +6,9 @@
   .ns__questionnaire__form {
     padding: 40px;
   }
+  .ns__list-video {
+    padding-top: 20px;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -141,10 +144,53 @@
       height: 20px;
     }
   }
+  .ns__questionnaire__form__cost {
+    font-size: 24px;
+  }
+  .ns__body {
+    padding-bottom: 40px;
+  }
+  .ns__questionnaire__form__ps {
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .ns__header__mob-toggle {
+    display: flex;
+    height: 20px;
+    width: 20px;
+    margin-left: 10px;
+  }
+  .ns__cabinet-box {
+    padding: 30px 20px;
+    h2 {
+      font-size: 22px;
+      line-height: 26px;
+    }
+    p {
+      font-size: 16px;
+    }
+    &__footer {
+      padding-top: 20px;
+      .btn {
+        width: 100%;
+      }
+    }
+  }
+  .hello-ico {
+    width: 24px;
+    height: 30px;
+  }
+  .ns__alert-text p {
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
 
 @media screen and (max-width: 440px) {
-
+  .ns__list-video {
+    max-width: 400px;
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 360px) {

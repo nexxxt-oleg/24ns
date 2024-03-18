@@ -1,0 +1,95 @@
+<!--#set var="title" value="Покупка Палитры 24NS" -->
+<!--#include virtual="/parts/header.html" -->
+<div class="container ns__body ns__questionnaire">
+    <div class="row justify-content-between ">
+        <div class="col-xl-5 col-lg-6">
+            <h1>Покупка Палитры 24NS</h1>
+            <form action="">
+                <div class="ns__questionnaire__form__item">
+                    <div class="ns__questionnaire__form__item__caption">Способ оплаты</div>
+                    <ul class="nav flex-column ns__questionnaire__form__list-radio">
+                        <li>
+                            <label class="ns__questionnaire__form__radio">
+                                <input type="radio" checked name="delivery" value="Банковской картой РФ">
+                                <div class="ns__questionnaire__form__radio__value">
+                                    <b>Банковской картой РФ</b>
+                                    VISA, Mastercard, Maestro, МИР
+                                </div>
+                            </label>
+                        </li>
+                        <li>
+                            <label class="ns__questionnaire__form__radio">
+                                <input type="radio" name="delivery" value="Международной картой">
+                                <div class="ns__questionnaire__form__radio__value">
+                                    <b>Международной картой</b>
+                                    VISA, Mastercard, Maestro, American Expres
+                                </div>
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="ns__questionnaire__form__item">
+                    <label for="fio" class="ns__questionnaire__form__item__caption">Фамилия Имя
+                        Отчество*</label>
+                    <input type="text" autocomplete="off" placeholder="Фамилия Имя Отчество" name="fio" id="fio" required="" class="ns__questionnaire__form__input" value="">
+                </div>
+                <div class="ns__questionnaire__form__item">
+                    <label for="email" class="ns__questionnaire__form__item__caption">E-mail*</label>
+                    <input type="email" autocomplete="off" placeholder="email" name="email" id="email" required="" class="ns__questionnaire__form__input">
+                </div>
+                <div class="ns__questionnaire__form__item">
+                    <label for="phone" class="ns__questionnaire__form__item__caption">Тeлефон / Whatsapp / Telegram*</label>
+                    <input type="tel" autocomplete="off" placeholder="Тeлефон / Whatsapp / Telegram" name="phone" id="phone" required="" class="ns__questionnaire__form__input js-phone-mask">
+                </div>
+                <div class="ns__questionnaire__form__item">
+                    <label for="password" class="ns__questionnaire__form__item__caption">Пароль*</label>
+                    <div class="ns__questionnaire__form__password">
+                        <div class="ns__questionnaire__form__password__toggle js-pass" data-target="password">
+                            <svg width="24" height="18">
+                                <use xlink:href="#svg-pass"></use>
+                            </svg>
+                        </div>
+                        <input type="password" autocomplete="off" placeholder="Пароль" name="password" id="password" required="" class="ns__questionnaire__form__input">
+                    </div>
+                </div>
+                <div class="ns__questionnaire__form__item">
+                    <label for="password2" class="ns__questionnaire__form__item__caption">Пароль еще раз*</label>
+                    <div class="ns__questionnaire__form__password">
+                        <div class="ns__questionnaire__form__password__toggle js-pass" data-target="password2">
+                            <svg width="24" height="18">
+                                <use xlink:href="#svg-pass"></use>
+                            </svg>
+                        </div>
+                        <input type="password" autocomplete="off" placeholder="Пароль" name="password2" id="password2" required="" class="ns__questionnaire__form__input">
+                    </div>
+                </div>
+                <div class="ns__questionnaire__form__item">
+                    <label for="sender" class="custom-checkbox">
+                        <input type="checkbox" value="1" name="sender" id="sender">
+                        <span class="custom-checkbox__value">Я хочу получать информационную рассылку от 24NS.world</span>
+                    </label>
+                </div>
+                <div class="ns__questionnaire__form__submit-price">
+                    <span class="ns__questionnaire__form__cost">4900 ₽</span>
+                    <button type="submit" class="btn btn--red">Оплатить</button>
+                </div>
+                <div class="ns__questionnaire__form__ps">
+                    Оплачивая палитру 24NS, вы принимаете <a href="">условия соглашения</a> и
+                    <a href="">политику обработки и защиты персональных данных</a>.
+                </div>
+            </form>
+        </div>
+        <div class="col-xl-6 col-lg-6 hidden-mob">
+            <div class="ns__bay-photos">
+                <picture>
+                    <source srcset="images/dist/lot1.jpg 1x, images/dist/lot1@2.jpg 2x">
+                    <img class="d-block" src="images/dist/lot1.jpg" alt="" width="615" height="398">
+                </picture>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+<!--#include virtual="/parts/footer.html" -->
