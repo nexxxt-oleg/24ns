@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+
+    <title>Войти в личный кабинет</title>
+    <meta name="description" content="">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel="icon" href="images/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/app.min.css">
+</head>
+<body>
+<div class="ns">
+
+    <header class="ns__header">
+        <div class="container">
+            <div class="ns__header__wrap d-flex">
+                <a href="/" class="ns__header__logo d-block">
+                    <picture>
+                        <source srcset="images/dist/logo.png 1x, images/dist/logo@2.png 2x">
+                        <img class="d-block" src="images/dist/logo.png" alt="" width="245" height="80">
+                    </picture>
+                </a>
+
+                <ul class="nav ns__header__right">
+                    <li class="hidden-mob">
+                        <a href="" class="btn btn--silver">На главную</a>
+                    </li>
+
+                    <li class="hidden-mob">
+                        <div class="dropdown dropdown--lang">
+                            <a href="" class="ns__header__lang" data-bs-toggle="dropdown">
+                                EN
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu--lang">
+                                <li><a class="dropdown-item" href="#">EN</a></li>
+                                <li><a class="dropdown-item" href="#">RU</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+                <div class="ns__header__mob-toggle">
+                    <svg width="20" height="15">
+                        <use xlink:href="#svg-burger"></use>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="container ns__body ">
+        <div class="row justify-content-center ">
+            <div class="col-xl-6 col-lg-8">
+                <div class="ns__card-auth">
+                    <h2 class="ns__card-auth__title">Войти в личный кабинет</h2>
+                    <form action="">
+
+                        <div class="ns__questionnaire__form__item">
+                            <label for="email" class="ns__questionnaire__form__item__caption">E-mail*</label>
+                            <input type="email" autocomplete="off" placeholder="email" name="email" id="email"
+                                   required="" class="ns__questionnaire__form__input">
+                        </div>
+
+                        <div class="ns__questionnaire__form__item">
+                            <label for="password" class="ns__questionnaire__form__item__caption">Пароль*</label>
+                            <div class="ns__questionnaire__form__password">
+                                <div class="ns__questionnaire__form__password__toggle js-pass" data-target="password">
+                                    <svg width="24" height="18">
+                                        <use xlink:href="#svg-pass"></use>
+                                    </svg>
+                                </div>
+                                <input type="password" autocomplete="off" placeholder="Пароль" name="password"
+                                       id="password" required="" class="ns__questionnaire__form__input">
+                            </div>
+                        </div>
+
+                        <div class="ns__questionnaire__form__submit2">
+                            <button type="submit" class="btn btn--red">Войти</button>
+                            <div class="ns__questionnaire__form__ps">
+                                <a href="">Восстановить пароль</a>
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+
+                <br>
+                <br>
+
+                <div class="ns__card-auth">
+                    <h2 class="ns__card-auth__title">Восстановить пароль</h2>
+                    <form action="">
+
+                        <div class="ns__questionnaire__form__item">
+                            <label for="email2" class="ns__questionnaire__form__item__caption">E-mail*</label>
+                            <input type="email" autocomplete="off" placeholder="email" name="email" id="email2"
+                                   required="" class="ns__questionnaire__form__input">
+                        </div>
+
+                        <div class="ns__questionnaire__form__item">
+                            <div class="ns__questionnaire__form__desc">
+                                Пожалуйста, введите e-mail, указанный при оплате. <br>
+                                Мы вышлем на него ссылку для восставновления пароля.
+                            </div>
+                        </div>
+
+                        <div class="ns__questionnaire__form__submit2">
+                            <button type="submit" class="btn btn--red">Отправить</button>
+                            <div class="ns__questionnaire__form__ps">
+                                <a href="">Авторизация</a>
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+                <br>
+                <br>
+
+                <div class="ns__card-auth">
+                    <h2 class="ns__card-auth__title">Восстановить пароль</h2>
+                    <form action="">
+
+                        <div class="ns__questionnaire__form__item">
+                            <div class="ns__questionnaire__form__desc">
+                                <b class="fs-16">Мы отправили на вашу почту письмо с инструкцией
+                                    по восстановлению пароля.</b><br><br>
+                                Если что-то пошло не так, пожалуйста, напишите нам:<br>
+                                <a href="mailto:help@24ns.world">help@24ns.world</a>
+                            </div>
+                        </div>
+
+                        <div class="ns__questionnaire__form__submit2">
+                            <div class="ns__questionnaire__form__ps pt-0">
+                                <a href="">Авторизация</a>
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+                <br>
+                <br>
+                <div class="ns__card-auth">
+                    <h2 class="ns__card-auth__title">Неверный логин или пароль</h2>
+
+                    <div class="ns__questionnaire__form__submit2">
+                        <div class="ns__questionnaire__form__ps pt-0">
+                            <a href="">Авторизация</a>
+                        </div>
+                        <div class="ns__questionnaire__form__ps">
+                            <a href="">Восстановить пароль</a>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <!--#include virtual="/parts/footer.html" -->

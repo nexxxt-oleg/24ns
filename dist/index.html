@@ -15,7 +15,8 @@
     <link rel="icon" href="images/favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+          rel="stylesheet">
     <link rel="stylesheet" href="css/vendor.css">
     <link rel="stylesheet" href="css/app.min.css">
 </head>
@@ -37,16 +38,28 @@
                         <a href="" class="btn btn--red">Заказать</a>
                     </li>
                     <li>
-                        <a href="" class="btn btn--ico">
-                            <svg width="14" height="18">
-                                <use xlink:href="#svg-user"></use>
-                            </svg>
-                        </a>
+                        <div class="dropdown-center dropdown--menu">
+                            <a href="" class="btn btn--ico" data-bs-toggle="dropdown">
+                                <svg width="14" height="18">
+                                    <use xlink:href="#svg-user"></use>
+                                </svg>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Личный кабинет</a></li>
+                                <li><a class="dropdown-item" href="#">Выйти</a></li>
+                            </ul>
+                        </div>
                     </li>
                     <li class="hidden-mob">
-                        <a href="" class="ns__header__lang">
-                            EN
-                        </a>
+                        <div class="dropdown dropdown--lang">
+                            <a href="" class="ns__header__lang" data-bs-toggle="dropdown">
+                                EN
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu--lang">
+                                <li><a class="dropdown-item" href="#">EN</a></li>
+                                <li><a class="dropdown-item" href="#">RU</a></li>
+                            </ul>
+                        </div>
                     </li>
                 </ul>
                 <div class="ns__header__mob-toggle">
@@ -61,6 +74,7 @@
 
 
 <div class="container ns__body ns__questionnaire">
+    <h1>Анкета для определения колорита</h1>
     <div class="row fpad30">
         <div class="col-lg-6  fpad30">
             <div class="ns__questionnaire__desc">
@@ -79,10 +93,7 @@
                     солнечные
                     лучи), без макияжа, без улыбки, где хорошо виден цвет глаз и волос.</p>
 
-                <p>Для этого необходимо подойти максимально близко лицом к окну днём и сфотографировать себя, примерно
-                    на
-                    расстоянии 20 см. на уровне глаз. Волосы распущены. Так же, необходимо протереть камеру телефона
-                    микрофиброй перед тем, как сделать фото.</p>
+                <p>Для этого необходимо подойти максимально близко лицом к окну днём и сфотографировать себя, примерно на расстоянии 20 см на уровне глаз. Волосы распущены. Также необходимо протереть камеру телефона микрофиброй перед тем, как сделать фото.</p>
             </div>
             <div class="ns__questionnaire__photo-mob">
                 <div class="ns__questionnaire__photos">
@@ -105,7 +116,7 @@
                 </div>
                 <h3>ВАЖНО! К тестированию не принимаются фотографии:</h3>
                 <ul>
-                    <li>если Вы стоите НЕ полностью повернувшись лицом к окну, боком или спиной.</li>
+                    <li>если ты стоишь НЕ полностью повернувшись лицом к окну, боком или спиной.</li>
                     <li>если фото сделано на улице или в верхней одежде</li>
                     <li>если фото мутное или сделано с применением фильтров на телефоне</li>
                     <li>если волосы НЕ распущены</li>
@@ -142,8 +153,8 @@
         <div class="col-lg-3 col-md-6 col-12 fpad30">
             <div class="ns__questionnaire__photos">
                 <picture>
-                    <source srcset="images/dist/photo2.jpg 1x, images/dist/photo2@2.jpg 2x">
-                    <img class="d-block" src="images/dist/photo2.jpg" alt="" width="270" height="320">
+                    <source srcset="images/dist/photo3.jpg 1x, images/dist/photo3@2.jpg 2x">
+                    <img class="d-block" src="images/dist/photo3.jpg" alt="" width="270" height="320">
                 </picture>
                 <div class="ns__questionnaire__photos__label ns__questionnaire__photos__label--error">
                     НЕПравильно
@@ -153,8 +164,8 @@
         <div class="col-lg-3 col-md-6 col-12 fpad30">
             <div class="ns__questionnaire__photos">
                 <picture>
-                    <source srcset="images/dist/photo2.jpg 1x, images/dist/photo2@2.jpg 2x">
-                    <img class="d-block" src="images/dist/photo2.jpg" alt="" width="270" height="320">
+                    <source srcset="images/dist/photo4.jpg 1x, images/dist/photo4@2.jpg 2x">
+                    <img class="d-block" src="images/dist/photo4.jpg" alt="" width="270" height="320">
                 </picture>
                 <div class="ns__questionnaire__photos__label ns__questionnaire__photos__label--error">
                     НЕПравильно

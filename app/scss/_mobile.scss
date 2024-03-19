@@ -186,13 +186,25 @@
   }
 }
 
+@media screen and (max-width: 574px) {
+  .ns__card-auth {
+    padding: 30px 20px;
+    border-radius: 30px;
+  }
+}
+
 @media screen and (max-width: 440px) {
   .ns__list-video {
     max-width: 400px;
     width: 100%;
   }
+  .ns__card-auth__title {
+    font-size: 20px;
+  }
 }
 
 @media screen and (max-width: 360px) {
-
+  .ns__card-auth {
+    padding: 20px 15px;
+  }
 }

@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 
@@ -6,7 +5,7 @@
 
     <meta charset="utf-8">
 
-    <title>Карточка в кабинете</title>
+    <title>Войти в личный кабинет</title>
     <meta name="description" content="">
 
     <meta name="viewport"
@@ -35,21 +34,9 @@
 
                 <ul class="nav ns__header__right">
                     <li class="hidden-mob">
-                        <a href="" class="btn btn--red">Заказать</a>
+                        <a href="" class="btn btn--silver">На главную</a>
                     </li>
-                    <li>
-                        <div class="dropdown-center dropdown--menu">
-                            <a href="" class="btn btn--ico" data-bs-toggle="dropdown">
-                                <svg width="14" height="18">
-                                    <use xlink:href="#svg-user"></use>
-                                </svg>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Личный кабинет</a></li>
-                                <li><a class="dropdown-item" href="#">Выйти</a></li>
-                            </ul>
-                        </div>
-                    </li>
+
                     <li class="hidden-mob">
                         <div class="dropdown dropdown--lang">
                             <a href="" class="ns__header__lang" data-bs-toggle="dropdown">
@@ -72,43 +59,115 @@
     </header>
 
 
+    <div class="container ns__body ">
+        <div class="row justify-content-center ">
+            <div class="col-xl-6 col-lg-8">
+                <div class="ns__card-auth">
+                    <h2 class="ns__card-auth__title">Войти в личный кабинет</h2>
+                    <form action="">
 
-<div class="container ns__body ns__questionnaire">
-    <div class="row">
-        <div class="col-xl-6 col-lg-6 fpad30">
-            <div class="ns__cabinet-box">
-                <h2>Привет, Дарья <span class="hello-ico"></span></h2>
-                <p>Мы подобрали для тебя палитру идеальных цветов!<br>
-                    Твоя палитра номер <b>7</b></p>
+                        <div class="ns__questionnaire__form__item">
+                            <label for="email" class="ns__questionnaire__form__item__caption">E-mail*</label>
+                            <input type="email" autocomplete="off" placeholder="email" name="email" id="email"
+                                   required="" class="ns__questionnaire__form__input">
+                        </div>
 
-                <p>В этих видео ты узнаешь свои акцентные и нейтральные цвета, подходящие именно тебе цвет металла, твой идеальный красный, варианты окрашивания чтобы оставаться в своем колорите, а так же запретные цвета, которые тебе не подходят, как подбирать вещи по палитре в магазине и еще много полезной информации.</p>
-                <div class="ns__cabinet-box__footer">
-                    <a href="" class="btn btn--red">Смотреть LookBook</a>
+                        <div class="ns__questionnaire__form__item">
+                            <label for="password" class="ns__questionnaire__form__item__caption">Пароль*</label>
+                            <div class="ns__questionnaire__form__password">
+                                <div class="ns__questionnaire__form__password__toggle js-pass" data-target="password">
+                                    <svg width="24" height="18">
+                                        <use xlink:href="#svg-pass"></use>
+                                    </svg>
+                                </div>
+                                <input type="password" autocomplete="off" placeholder="Пароль" name="password"
+                                       id="password" required="" class="ns__questionnaire__form__input">
+                            </div>
+                        </div>
+
+                        <div class="ns__questionnaire__form__submit2">
+                            <button type="submit" class="btn btn--red">Войти</button>
+                            <div class="ns__questionnaire__form__ps">
+                                <a href="">Восстановить пароль</a>
+                            </div>
+                        </div>
+
+                    </form>
                 </div>
-            </div>
-        </div>
-        <div class="col-xl-6 col-lg-6 d-flex justify-content-center">
-            <div class="ns__list-video">
-                <div class="ns__list-video__item">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/NH1TLyiJVHU?si=vB8kbN_UWyqWKdhe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                    <div class="ns__list-video__item__title">Видео консультация по цвету</div>
+
+                <br>
+                <br>
+
+                <div class="ns__card-auth">
+                    <h2 class="ns__card-auth__title">Восстановить пароль</h2>
+                    <form action="">
+
+                        <div class="ns__questionnaire__form__item">
+                            <label for="email2" class="ns__questionnaire__form__item__caption">E-mail*</label>
+                            <input type="email" autocomplete="off" placeholder="email" name="email" id="email2"
+                                   required="" class="ns__questionnaire__form__input">
+                        </div>
+
+                        <div class="ns__questionnaire__form__item">
+                            <div class="ns__questionnaire__form__desc">
+                                Пожалуйста, введите e-mail, указанный при оплате. <br>
+                                Мы вышлем на него ссылку для восставновления пароля.
+                            </div>
+                        </div>
+
+                        <div class="ns__questionnaire__form__submit2">
+                            <button type="submit" class="btn btn--red">Отправить</button>
+                            <div class="ns__questionnaire__form__ps">
+                                <a href="">Авторизация</a>
+                            </div>
+                        </div>
+
+                    </form>
                 </div>
-                <div class="ns__list-video__item">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/NH1TLyiJVHU?si=vB8kbN_UWyqWKdhe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                    <div class="ns__list-video__item__title">Видео консультация по цвету</div>
+                <br>
+                <br>
+
+                <div class="ns__card-auth">
+                    <h2 class="ns__card-auth__title">Восстановить пароль</h2>
+                    <form action="">
+
+                        <div class="ns__questionnaire__form__item">
+                            <div class="ns__questionnaire__form__desc">
+                                <b class="fs-16">Мы отправили на вашу почту письмо с инструкцией
+                                    по восстановлению пароля.</b><br><br>
+                                Если что-то пошло не так, пожалуйста, напишите нам:<br>
+                                <a href="mailto:help@24ns.world">help@24ns.world</a>
+                            </div>
+                        </div>
+
+                        <div class="ns__questionnaire__form__submit2">
+                            <div class="ns__questionnaire__form__ps pt-0">
+                                <a href="">Авторизация</a>
+                            </div>
+                        </div>
+
+                    </form>
                 </div>
-                <div class="ns__list-video__item">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/NH1TLyiJVHU?si=vB8kbN_UWyqWKdhe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                    <div class="ns__list-video__item__title">Видео консультация по цвету</div>
+                <br>
+                <br>
+                <div class="ns__card-auth">
+                    <h2 class="ns__card-auth__title">Неверный логин или пароль</h2>
+
+                    <div class="ns__questionnaire__form__submit2">
+                        <div class="ns__questionnaire__form__ps pt-0">
+                            <a href="">Авторизация</a>
+                        </div>
+                        <div class="ns__questionnaire__form__ps">
+                            <a href="">Восстановить пароль</a>
+                        </div>
+                    </div>
                 </div>
+
+
             </div>
         </div>
     </div>
-
-
-</div>
-
-<footer class="ns__footer">
+    <footer class="ns__footer">
     <div class="container">
         <div class="ns__footer__wrap">
             <ul class="nav nav--soc">

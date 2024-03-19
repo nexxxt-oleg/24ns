@@ -1,6 +1,7 @@
 <!--#set var="title" value="Анкета" -->
 <!--#include virtual="/parts/header.html" -->
 <div class="container ns__body ns__questionnaire">
+    <h1>Анкета для определения колорита</h1>
     <div class="row fpad30">
         <div class="col-lg-6  fpad30">
             <div class="ns__questionnaire__desc">
@@ -19,10 +20,7 @@
                     солнечные
                     лучи), без макияжа, без улыбки, где хорошо виден цвет глаз и волос.</p>
 
-                <p>Для этого необходимо подойти максимально близко лицом к окну днём и сфотографировать себя, примерно
-                    на
-                    расстоянии 20 см. на уровне глаз. Волосы распущены. Так же, необходимо протереть камеру телефона
-                    микрофиброй перед тем, как сделать фото.</p>
+                <p>Для этого необходимо подойти максимально близко лицом к окну днём и сфотографировать себя, примерно на расстоянии 20 см на уровне глаз. Волосы распущены. Также необходимо протереть камеру телефона микрофиброй перед тем, как сделать фото.</p>
             </div>
             <div class="ns__questionnaire__photo-mob">
                 <div class="ns__questionnaire__photos">
@@ -45,7 +43,7 @@
                 </div>
                 <h3>ВАЖНО! К тестированию не принимаются фотографии:</h3>
                 <ul>
-                    <li>если Вы стоите НЕ полностью повернувшись лицом к окну, боком или спиной.</li>
+                    <li>если ты стоишь НЕ полностью повернувшись лицом к окну, боком или спиной.</li>
                     <li>если фото сделано на улице или в верхней одежде</li>
                     <li>если фото мутное или сделано с применением фильтров на телефоне</li>
                     <li>если волосы НЕ распущены</li>
@@ -82,8 +80,8 @@
         <div class="col-lg-3 col-md-6 col-12 fpad30">
             <div class="ns__questionnaire__photos">
                 <picture>
-                    <source srcset="images/dist/photo2.jpg 1x, images/dist/photo2@2.jpg 2x">
-                    <img class="d-block" src="images/dist/photo2.jpg" alt="" width="270" height="320">
+                    <source srcset="images/dist/photo3.jpg 1x, images/dist/photo3@2.jpg 2x">
+                    <img class="d-block" src="images/dist/photo3.jpg" alt="" width="270" height="320">
                 </picture>
                 <div class="ns__questionnaire__photos__label ns__questionnaire__photos__label--error">
                     НЕПравильно
@@ -93,8 +91,8 @@
         <div class="col-lg-3 col-md-6 col-12 fpad30">
             <div class="ns__questionnaire__photos">
                 <picture>
-                    <source srcset="images/dist/photo2.jpg 1x, images/dist/photo2@2.jpg 2x">
-                    <img class="d-block" src="images/dist/photo2.jpg" alt="" width="270" height="320">
+                    <source srcset="images/dist/photo4.jpg 1x, images/dist/photo4@2.jpg 2x">
+                    <img class="d-block" src="images/dist/photo4.jpg" alt="" width="270" height="320">
                 </picture>
                 <div class="ns__questionnaire__photos__label ns__questionnaire__photos__label--error">
                     НЕПравильно
@@ -104,7 +102,7 @@
     </div>
     <div class="row justify-content-center">
         <div class="col-xl-10">
-            <form action="" id="questionnaireForm">
+            <form action="" id="questionnaireForm" enctype="multipart/form-data">
                 <div class="ns__questionnaire__form">
                     <div class="ns__questionnaire__form__title">
                         Заполните анкету для определения Вашего колорита
@@ -119,7 +117,7 @@
                             <span>Загрузите фотографии</span>
                         </div>
                         <div class="ns__questionnaire__form__item">
-                            <label for="file1" class="ns__questionnaire__form__item__caption">Загрузите фото по инструкции*</label>
+                            <label for="file1" class="ns__questionnaire__form__item__caption">Загрузи фото по инструкции*</label>
                             <label for="file1" class="ns__questionnaire__form__file">
                                 <input required type="file" id="file1" name="file1" class="ns__questionnaire__form__file__inp">
                                 <span class="ns__questionnaire__form__file__value">Добавить фото</span>
@@ -132,9 +130,9 @@
                             <div class="ns__questionnaire__form__item__footer">Максимальный размер 20 Мб</div>
                         </div>
                         <div class="ns__questionnaire__form__item">
-                            <label for="file2" class="ns__questionnaire__form__item__caption">Загрузите обычное фото лица из жизни*</label>
+                            <label for="file2" class="ns__questionnaire__form__item__caption">Загрузи минимум 3 обычных фото лица из жизни*</label>
                             <label for="file2" class="ns__questionnaire__form__file">
-                                <input required type="file" id="file2" name="file2" class="ns__questionnaire__form__file__inp">
+                                <input multiple required type="file" id="file2" name="file2" class="ns__questionnaire__form__file__inp">
                                 <span class="ns__questionnaire__form__file__value">Добавить фото</span>
                                 <div class="ns__questionnaire__form__file__ico">
                                     <svg width="24" height="24">
@@ -144,32 +142,7 @@
                             </label>
                             <div class="ns__questionnaire__form__item__footer">Максимальный размер 20 Мб</div>
                         </div>
-                        <div class="ns__questionnaire__form__item">
-                            <label for="file3" class="ns__questionnaire__form__item__caption">Загрузите обычное фото лица из жизни*</label>
-                            <label for="file3" class="ns__questionnaire__form__file">
-                                <input required type="file" id="file3" name="file3" class="ns__questionnaire__form__file__inp">
-                                <span class="ns__questionnaire__form__file__value">Добавить фото</span>
-                                <div class="ns__questionnaire__form__file__ico">
-                                    <svg width="24" height="24">
-                                        <use xlink:href="#svg-photos"></use>
-                                    </svg>
-                                </div>
-                            </label>
-                            <div class="ns__questionnaire__form__item__footer">Максимальный размер 20 Мб</div>
-                        </div>
-                        <div class="ns__questionnaire__form__item">
-                            <label for="file4" class="ns__questionnaire__form__item__caption">Загрузите обычное фото лица из жизни*</label>
-                            <label for="file4" class="ns__questionnaire__form__file">
-                                <input required type="file" id="file4" name="file4" class="ns__questionnaire__form__file__inp">
-                                <span class="ns__questionnaire__form__file__value">Добавить фото</span>
-                                <div class="ns__questionnaire__form__file__ico">
-                                    <svg width="24" height="24">
-                                        <use xlink:href="#svg-photos"></use>
-                                    </svg>
-                                </div>
-                            </label>
-                            <div class="ns__questionnaire__form__item__footer">Максимальный размер 20 Мб</div>
-                        </div>
+
                     </div>
                     <div class="ns__questionnaire__form__group">
                         <div class="ns__questionnaire__form__group__header">
