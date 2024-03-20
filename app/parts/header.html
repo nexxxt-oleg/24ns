@@ -62,9 +62,67 @@
                     </li>
                 </ul>
                 <div class="ns__header__mob-toggle">
-                    <svg width="20" height="15">
-                        <use xlink:href="#svg-burger"></use>
-                    </svg>
+                    <button class="hamburger hamburger--collapse collapsed" data-bs-toggle="collapse"
+                            data-bs-target="#collapseMenu">
+                          <span class="hamburger-box">
+                            <span class="hamburger-inner"></span>
+                          </span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="collapseMenu" class="accordion-collapse collapse ns__header__mob-menu">
+            <div class="ns__header__mob-menu__wrap">
+                <div class="container">
+
+                    <ul class="nav flex-column ns__header__mob-menu__nav">
+                        <li><a href="">Главная</a></li>
+                        <li><a href="">Заказать</a></li>
+                    </ul>
+                    <div class="ns__header__mob-menu__lang">
+                        <div class="ns__header__mob-menu__lang__caption">Выбор языка</div>
+                        <ul class="nav">
+                            <li><a href="">EN</a></li>
+                            <li><a href="">RU</a></li>
+                        </ul>
+                    </div>
+
+                    <ul class="nav nav--soc">
+                        <li>
+                            <a href="" target="_blank" class="nav__item nav__item--vk">
+                                <svg width="36" height="23">
+                                    <use xlink:href="#svg-vk"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" target="_blank" class="nav__item nav__item--tg">
+                                <svg width="32" height="27">
+                                    <use xlink:href="#svg-tg"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" target="_blank" class="nav__item nav__item--yt">
+                                <svg width="32" height="23">
+                                    <use xlink:href="#svg-yt"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" target="_blank" class="nav__item nav__item--dzen">
+                                <svg width="32" height="32">
+                                    <use xlink:href="#svg-dzen"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <ul class="nav flex-column ns__header__mob-menu__nav ">
+                        <li><a href="">Политика использования<br> cookie-файлов</a></li>
+                        <li><a href="">Политика обработки и защиты<br>
+                            персональных данных</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
