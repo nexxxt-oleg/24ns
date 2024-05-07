@@ -12,8 +12,82 @@
 }
 
 @media screen and (max-width: 768px) {
+  #revPag {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 25px;
+    position: relative;
+    bottom: auto;
+    left: auto;
+    .swiper-pagination-bullet {
+      width: 10px;
+      height: 10px;
+      background: #e7e7e7;
+      border-radius: 5px;
+      &::before {
+        display: none;
+      }
+      &::after {
+        display: none;
+      }
+      &.swiper-pagination-bullet-active {
+        background: #404042;
+      }
+    }
+  }
+  .ns__home__rev {
+    padding-bottom: 40px;
+  }
+  .ns__home__green-box {
+    padding-top: 30px;
+    h2 {
+      font-size: 30px;
+    }
+  }
+  .ns__home__green-box__item:after {
+    position: relative;
+    width: 1px;
+    height: 50px;
+    margin: 10px auto;
+    top: auto;
+    left: auto;
+    right: auto;
+  }
+  .ns__home__green-box__item--right::after,
+  .ns__home__green-box__item--center::before {
+    display: none;
+  }
+  .ns__home__prim__item__numb {
+    width: 66px;
+    height: 66px;
+    border-radius: 33px;
+    margin-top: -30px;
+    line-height: 66px;
+    font-size: 36px;
+  }
+  .ns__home__prim__item__ps {
+    font-size: 14px;
+  }
+  .ns__home__green-box__item__title {
+    font-size: 18px;
+    padding-top: 10px;
+  }
+  .ns__home__prim__item__title {
+    font-size: 18px;
+  }
   .hidden-mob {
     display: none;
+  }
+  .ns__home {
+    margin-top: -26px;
+  }
+  .ns__home__colors li {
+    width: 40px;
+    height: 40px;
+  }
+  .ns__home__colors {
+    margin-bottom: 10px;
   }
   .ns__questionnaire__form {
     padding: 20px;
@@ -24,11 +98,29 @@
       line-height: 24px;
     }
   }
+  .ns__home__rev__slider {
+    .swiper-wrapper {
+      align-items: flex-start !important;
+    }
+  }
+  .ns__home__prim {
+    margin-bottom: 20px;
+  }
+  .slider-nav {
+    display: none;
+  }
   .ns__questionnaire__form__group__header span {
     font-size: 16px;
   }
   .ns__header__right li:not(:last-child) {
     padding-right: 0;
+  }
+  .ns__home__footer {
+    padding-bottom: 50px;
+  }
+  .ns__home__rev__title {
+    font-size: 30px;
+    padding-bottom: 20px;
   }
   .ns__header__wrap {
     padding: 15px 0;
