@@ -874,12 +874,14 @@ body {
   z-index: 10;
   background: #fff;
   &__top-banner {
-    padding-bottom: 50px;
-    img {
+    margin-bottom: 50px;
+    position: relative;
+    height: calc(100vh - 120px);
+    /*img {
       display: block;
       width: 100%;
       height: auto;
-    }
+    }*/
   }
   &__middle-banner {
     padding-bottom: 20px;
